@@ -1,0 +1,28 @@
+<section class="container">
+  <div class="left-section">
+    <article>
+      <ul>
+        <li
+        *ngFor="let alcohol of alcohols"
+        (click)="onSelectAlcohol(alcohol)">{{alcohol}}</li>
+     </ul>
+    </article>
+  </div>
+  <div class="right-section">
+    <article>
+      <h3>Cocktails with selected alcohol</h3>
+      <ul>
+        <ol *ngFor="let cockt of selectedCocktails">
+          <div class="cocktail-info">
+            <h4>{{cockt.name}}</h4>
+            <ul>
+              <li *ngFor="let ing of cockt.ingridients">
+                {{ing.volume}} {{ing.unit}} {{ing.name}}
+              </li>
+            </ul>
+          </div>
+        </ol>
+      </ul>
+    </article>
+  </div>
+</section>

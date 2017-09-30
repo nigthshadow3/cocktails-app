@@ -1,0 +1,12 @@
+{
+  "cocktails": [
+    {
+      "name": "A",
+      "primaryAlco": "bb"
+    },
+    {
+      "name": "B",
+      "primaryAlco": "cc"
+    }
+  ]
+}
